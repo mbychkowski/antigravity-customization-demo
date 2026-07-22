@@ -1,0 +1,32 @@
+{
+  "$schema": "https://antigravity.dev/schemas/plugin.v1.json",
+  "name": "db-migration-sentinel",
+  "version": "1.0.0",
+  "displayName": "Database Migration Sentinel",
+  "description": "Zero-data-loss SQLite migration guardrail. Provides safety rules, automated schema diffing, command interception hooks, and background health monitoring.",
+  "author": "mbychkowski",
+  "license": "MIT",
+  "repository": "https://github.com/mbychkowski/antigravity-customization-demo",
+  "keywords": [
+    "sqlite",
+    "migrations",
+    "database-safety",
+    "antigravity-plugin"
+  ],
+  "components": {
+    "rules": [
+      "rules/migration-safety.md"
+    ],
+  "skills": [
+      "skills/generate-schema-diff/SKILL.md",
+      "skills/safe-migrate/SKILL.md"
+    ],
+    "workflows": [
+      "workflows/safe-migrate.md"
+    ],
+    "hooks": "hooks/hooks.json",
+    "sidecars": [
+      "sidecars/db-health-monitor/sidecar.json"
+    ]
+  }
+}

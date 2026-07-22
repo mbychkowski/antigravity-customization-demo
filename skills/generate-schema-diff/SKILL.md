@@ -13,4 +13,4 @@ Use this skill when asked to update, alter, or add new features to a database.
 Execute the skill's bundled inspection script against the target database:
 
 ```bash
-python3 .agents/skills/generate-schema-diff/scripts/inspect_schema.py blog.db
+python3 skills/generate-schema-diff/scripts/inspect_schema.py blog.db

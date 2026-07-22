@@ -6,7 +6,7 @@
       "event": "pre-tool-call",
       "tool": "bash",
       "matcher": "command.contains('sqlite3') && command.contains('blog.db')",
-      "handler": "python3 .agents/hooks/scripts/validate_sqlite_cmd.py"
+      "handler": "python3 hooks/scripts/validate_sqlite_cmd.py"
     }
   ]
 }
