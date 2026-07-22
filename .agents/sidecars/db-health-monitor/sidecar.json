@@ -1,0 +1,7 @@
+{
+  "id": "db-health-monitor",
+  "name": "SQLite Health Monitor",
+  "description": "Background process monitoring SQLite database file size, WAL logs, and connection locks.",
+  "entrypoint": "python3 monitor.py",
+  "interval_seconds": 5
+}

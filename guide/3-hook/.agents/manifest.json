@@ -1,0 +1,9 @@
+{
+  "skills": {
+    "generate-schema-diff": {
+      "status": "installed",
+      "disabled": false,
+      "error": null
+    }
+  }
+}
