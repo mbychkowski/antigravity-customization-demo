@@ -26,16 +26,16 @@ graph TD
 
 ## 📂 Progressive Showcase Guides
 
-We have organized each stage of the progression inside the [guide/](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/) folder. Each directory inherits all files from the previous step, adding only the features relevant to its section. 
+We have organized each stage of the progression inside the [guide/](guide/) folder. Each directory inherits all files from the previous step, adding only the features relevant to its section. 
 
 | Stage | Name | Key Primitive Added | Focus / Goal | Documentation |
 | :---: | :--- | :--- | :--- | :---: |
-| **0** | **Baseline Setup** | None | Setting up a local SQLite `blog.db` with sample records. | [Read Setup](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/1-rule/README.md#%EF%B8%8F-step-0-baseline-environment-setup-zero-primitives) |
-| **1** | **Passive Policy** | `Rule` | Preventing direct or destructive actions via system prompt injection. | [Guide 1 (Rule)](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/1-rule/README.md) |
-| **2** | **Custom Tooling** | `Skill` | Fact gathering using schema inspectors and drafting migration SQL. | [Guide 2 (Skill)](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/2-skill/README.md) |
-| **3** | **Hard Gatekeeper** | `Hook` | Cancelling dangerous tool commands programmatically before execution. | [Guide 3 (Hook)](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/3-hook/README.md) |
-| **4** | **Orchestrator** | `Workflow` | Running end-to-end migrations with automatic rollback testing. | [Guide 4 (Workflow)](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/4-workflow/README.md) |
-| **5** | **Background Daemon** | `Sidecar` | Non-blocking background health, file size, and database lock auditing. | [Guide 5 (Sidecar)](file:///home/mbychkowski/Code/antigravity-demo-adv/guide/5-sidecar/README.md) |
+| **0** | **Baseline Setup** | None | Setting up a local SQLite `blog.db` with sample records. | [Read Setup](guide/1-rule/README.md#%EF%B8%8F-step-0-baseline-environment-setup-zero-primitives) |
+| **1** | **Passive Policy** | `Rule` | Preventing direct or destructive actions via system prompt injection. | [Guide 1 (Rule)](guide/1-rule/README.md) |
+| **2** | **Custom Tooling** | `Skill` | Fact gathering using schema inspectors and drafting migration SQL. | [Guide 2 (Skill)](guide/2-skill/README.md) |
+| **3** | **Hard Gatekeeper** | `Hook` | Cancelling dangerous tool commands programmatically before execution. | [Guide 3 (Hook)](guide/3-hook/README.md) |
+| **4** | **Orchestrator** | `Workflow` | Running end-to-end migrations with automatic rollback testing. | [Guide 4 (Workflow)](guide/4-workflow/README.md) |
+| **5** | **Background Daemon** | `Sidecar` | Non-blocking background health, file size, and database lock auditing. | [Guide 5 (Sidecar)](guide/5-sidecar/README.md) |
 
 ---
 
@@ -65,7 +65,7 @@ Inspect blog.db and draft a migration to add an author_id column to posts.
 
 ## ⚙️ Plugin Metadata
 
-This repository contains the complete distributable Antigravity plugin pack. It is defined in [plugin.json](file:///home/mbychkowski/Code/antigravity-demo-adv/plugin.json) and registers:
+This repository contains the complete distributable Antigravity plugin pack. It is defined in [plugin.json](plugin.json) and registers:
 * **Rules**: `rules/migration-safety.md`
 * **Skills**: `skills/generate-schema-diff/SKILL.md`, `skills/safe-migrate/SKILL.md`
 * **Workflows**: `workflows/safe-migrate.md`
