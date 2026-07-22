@@ -6,6 +6,36 @@ It demonstrates how to combine **Rules**, **Skills**, **Hooks**, **Workflows**, 
 
 ---
 
+## 🚀 Installation & Activation
+
+To activate the **Database Migration Sentinel** in your own active Antigravity workspace, choose one of the following installation methods:
+
+### Method 1: Using the Antigravity CLI (Recommended)
+Run the following command within your active workspace directory:
+```bash
+agy plugin install git::https://github.com/mbychkowski/antigravity-customization-demo.git
+```
+
+### Method 2: Manual Manifest Registration
+Add the remote git repository URL directly to your workspace's `.agents/manifest.json` file:
+```json
+{
+  "plugins": [
+    "git::https://github.com/mbychkowski/antigravity-customization-demo.git"
+  ]
+}
+```
+
+### Method 3: Local Development Installation
+For offline usage, local testing, or development, clone this repository and install it locally:
+```bash
+git clone https://github.com/mbychkowski/antigravity-customization-demo.git
+cd your-active-workspace/
+agy plugin install ../path/to/antigravity-customization-demo
+```
+
+---
+
 ## 📋 Architecture & Progression Overview
 
 The primitives in this repository build on top of each other incrementally, moving from passive rules to fully coordinated, active runtime workflows.
